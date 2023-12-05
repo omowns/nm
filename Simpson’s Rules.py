@@ -11,3 +11,5 @@ def st_S13(fun,x0,xn,n):
         yeven = yeven + fun(x0 + j * h)
     I= (1/3) * h * (y0 + yn + 4 * yodd + 2 * yeven)
     print("Integration : %0.4f"%I)
+
+st_S13(lambda x: 1/(1+x*x),0,6,6)
